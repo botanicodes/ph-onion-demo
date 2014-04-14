@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Core", "src\PriorityHealth.Core\PriorityHealth.Core.csproj", "{6EDDC95A-3911-4DDA-B9F7-4196233C855D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Demo.Web.Api", "src\PriorityHealth.Demo.Web.Api\PriorityHealth.Demo.Web.Api.csproj", "{293ABC27-5EAD-4B83-A9AC-E021AC92E035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Demo.Web.Api.Tests", "src\PriorityHealth.Demo.Web.Api.Tests\PriorityHealth.Demo.Web.Api.Tests.csproj", "{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.Configuration", "src\PriorityHealth.Infrastructure.Configuration\PriorityHealth.Infrastructure.Configuration.csproj", "{32A4A675-24BD-4843-BDC0-4A2FA508A9BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.Logging", "src\PriorityHealth.Infrastructure.Logging\PriorityHealth.Infrastructure.Logging.csproj", "{41062316-A319-4524-93F4-9348CACBBD42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5C62EF26-8676-4C89-B38F-14CB6545539A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0F910AA7-B9B2-465C-834A-F73C01221A79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{15A6D187-767C-41A6-BCD0-8B7AE27D6469}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F2EE0D3A-A77E-4F43-B200-7AAEC0FB762E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EDDC95A-3911-4DDA-B9F7-4196233C855D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDDC95A-3911-4DDA-B9F7-4196233C855D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDDC95A-3911-4DDA-B9F7-4196233C855D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDDC95A-3911-4DDA-B9F7-4196233C855D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293ABC27-5EAD-4B83-A9AC-E021AC92E035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293ABC27-5EAD-4B83-A9AC-E021AC92E035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293ABC27-5EAD-4B83-A9AC-E021AC92E035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293ABC27-5EAD-4B83-A9AC-E021AC92E035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41062316-A319-4524-93F4-9348CACBBD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41062316-A319-4524-93F4-9348CACBBD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41062316-A319-4524-93F4-9348CACBBD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41062316-A319-4524-93F4-9348CACBBD42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EDDC95A-3911-4DDA-B9F7-4196233C855D} = {5C62EF26-8676-4C89-B38F-14CB6545539A}
+		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
+		{41062316-A319-4524-93F4-9348CACBBD42} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
+		{293ABC27-5EAD-4B83-A9AC-E021AC92E035} = {15A6D187-767C-41A6-BCD0-8B7AE27D6469}
+		{7160E8C2-33F8-42CE-9C5E-D6BA8CF2263E} = {F2EE0D3A-A77E-4F43-B200-7AAEC0FB762E}
+	EndGlobalSection
+EndGlobal
