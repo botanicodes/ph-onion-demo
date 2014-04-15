@@ -9,7 +9,7 @@ namespace PriorityHealth.Core.Application
 {
     public interface IInitializer
     {
-        void Initialize();
+        void Initialize(EnvironmentProfile environment);
     }
 
 }

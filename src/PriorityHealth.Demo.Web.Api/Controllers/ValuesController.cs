@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PriorityHealth.Core.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,6 +10,12 @@ namespace PriorityHealth.Demo.Web.Api.Controllers
 {
     public class ValuesController : ApiController
     {
+
+        public ValuesController(ILogger logger)
+        {
+            
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {

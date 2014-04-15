@@ -7,7 +7,7 @@
 //-----------------------------------------------------------------------
 	  
 	  
-namespace PriorityHealth.Infrastructure.Logging.Impl
+namespace PriorityHealth.Logging.Impl
 {
     using log4net;
     using PriorityHealth.Core.Services;

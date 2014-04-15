@@ -57,6 +57,14 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -121,11 +129,16 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\WebActivatorEx.2.0.5\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <HintPath>..\..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AppBootstrapper.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -147,19 +160,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Images\accent.png" />
-    <Content Include="Images\bullet.png" />
-    <Content Include="Images\heroAccent.png" />
-    <Content Include="Images\orderedList0.png" />
-    <Content Include="Images\orderedList1.png" />
-    <Content Include="Images\orderedList2.png" />
-    <Content Include="Images\orderedList3.png" />
-    <Content Include="Images\orderedList4.png" />
-    <Content Include="Images\orderedList5.png" />
-    <Content Include="Images\orderedList6.png" />
-    <Content Include="Images\orderedList7.png" />
-    <Content Include="Images\orderedList8.png" />
-    <Content Include="Images\orderedList9.png" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -179,9 +179,17 @@
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
       <Name>PriorityHealth.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PriorityHealth.Demo\PriorityHealth.Demo.csproj">
+      <Project>{98c8fbd2-ecf8-419e-8aa9-4ef704f3ff7a}</Project>
+      <Name>PriorityHealth.Demo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Infrastructure.Configuration\PriorityHealth.Infrastructure.Configuration.csproj">
       <Project>{32a4a675-24bd-4843-bdc0-4a2fa508a9bb}</Project>
       <Name>PriorityHealth.Infrastructure.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.IoC\PriorityHealth.Infrastructure.IoC.csproj">
+      <Project>{dc6fd1ed-67a4-4318-8a56-8a644b9a9662}</Project>
+      <Name>PriorityHealth.Infrastructure.IoC</Name>
     </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Infrastructure.Logging\PriorityHealth.Infrastructure.Logging.csproj">
       <Project>{41062316-a319-4524-93f4-9348cacbbd42}</Project>

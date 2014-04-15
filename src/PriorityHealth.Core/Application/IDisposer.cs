@@ -9,6 +9,6 @@ namespace PriorityHealth.Core.Application
 {
     public interface IDisposer
     {
-        void Dispose();
+        void Dispose(EnvironmentProfile environment);
     }
 }

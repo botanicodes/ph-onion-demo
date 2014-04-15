@@ -7,7 +7,7 @@
 	  
 	  
 
-namespace PriorityHealth.Phonebook
+namespace PriorityHealth.Configuration
 {
     using PriorityHealth.Core.Application;
     using PriorityHealth.Phonebook.Application.Attributes;
@@ -48,37 +48,24 @@ namespace PriorityHealth.Phonebook
         }
         #endregion
 
-        #region Static Vars / Methods
-        private static Bootstrapper _bootstrapper;
-
-        /// <summary>
-        /// Get an instance of a bootstrapper to configure
-        /// </summary>
-        /// <returns></returns>
-        public static Bootstrapper Configure()
-        {
-            return _bootstrapper ?? (_bootstrapper = new Bootstrapper());
-        }
-        #endregion
-
         #region IInitializer,IDisposer Methods
 
         /// <summary>
         /// Initialize the application's bootstrapper
         /// </summary>
-        public void Initialize()
+        public void Initialize(EnvironmentProfile profile)
         {
             foreach (IInitializer initializer in Initializers)
-                initializer.Initialize();
+                initializer.Initialize(profile);
         }
 
         /// <summary>
         /// Dispose of the application's bootstrapper
         /// </summary>
-        public void Dispose()
+        public void Dispose(EnvironmentProfile profile)
         {
             foreach (IDisposer disposer in Disposers)
-                disposer.Dispose();
+                disposer.Dispose(profile);
         }
         #endregion
 
