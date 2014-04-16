@@ -70,6 +70,7 @@
     <Compile Include="Application\Bootstrap\NinjectBootstrapper.cs" />
     <Compile Include="Application\Bootstrap\MainInitializer.cs" />
     <Compile Include="Configuration\IoC\AppServicesModule.cs" />
+    <Compile Include="Configuration\IoC\DomainServicesModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +81,10 @@
     <ProjectReference Include="..\PriorityHealth.Infrastructure.Configuration\PriorityHealth.Infrastructure.Configuration.csproj">
       <Project>{32a4a675-24bd-4843-bdc0-4a2fa508a9bb}</Project>
       <Name>PriorityHealth.Infrastructure.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.EntityFramework\PriorityHealth.Infrastructure.EntityFramework.csproj">
+      <Project>{93e1166b-f5ef-4a8b-a844-ae9d15a3daa1}</Project>
+      <Name>PriorityHealth.Infrastructure.EntityFramework</Name>
     </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Infrastructure.IoC\PriorityHealth.Infrastructure.IoC.csproj">
       <Project>{dc6fd1ed-67a4-4318-8a56-8a644b9a9662}</Project>

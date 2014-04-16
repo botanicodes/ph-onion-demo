@@ -26,6 +26,7 @@ namespace PriorityHealth.Demo.Application.Bootstrap
         protected override void SetupDependencies(Ninject.IKernel kernel)
         {
             kernel.Load<Configuration.IoC.AppServicesModule>();
+            kernel.Load<Configuration.IoC.DomainServicesModule>();
 
         }
 

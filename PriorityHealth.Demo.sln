@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Demo", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.IoC", "src\PriorityHealth.Infrastructure.IoC\PriorityHealth.Infrastructure.IoC.csproj", "{DC6FD1ED-67A4-4318-8A56-8A644B9A9662}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.EntityFramework", "src\PriorityHealth.Infrastructure.EntityFramework\PriorityHealth.Infrastructure.EntityFramework.csproj", "{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{DC6FD1ED-67A4-4318-8A56-8A644B9A9662}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC6FD1ED-67A4-4318-8A56-8A644B9A9662}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC6FD1ED-67A4-4318-8A56-8A644B9A9662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,6 @@ Global
 		{41062316-A319-4524-93F4-9348CACBBD42} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 		{DC6FD1ED-67A4-4318-8A56-8A644B9A9662} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
+		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 	EndGlobalSection
 EndGlobal
