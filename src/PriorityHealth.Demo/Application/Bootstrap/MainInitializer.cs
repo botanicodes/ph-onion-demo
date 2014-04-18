@@ -25,6 +25,19 @@ namespace PriorityHealth.Demo.Application.Bootstrap
         public void Initialize(EnvironmentProfile environment)
         {
             InitLogger();
+            InitAutoMapper();
+        }
+
+        private void InitAutoMapper()
+        {
+            AutoMapper.Mapper.Initialize(config =>
+            {
+                config.AddProfile<Configuration.Mapping.UserMappingProfile>();
+                
+            });
+
+            AutoMapper.Mapper.AssertConfigurationIsValid();
+
         }
 
         private void InitLogger()

@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.EntityFramework", "src\PriorityHealth.Infrastructure.EntityFramework\PriorityHealth.Infrastructure.EntityFramework.csproj", "{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.Migrations", "src\PriorityHealth.Infrastructure.Migrations\PriorityHealth.Infrastructure.Migrations.csproj", "{E099C2CA-08C4-494A-8FC6-532EC73FD346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +85,6 @@ Global
 		{32A4A675-24BD-4843-BDC0-4A2FA508A9BB} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 		{DC6FD1ED-67A4-4318-8A56-8A644B9A9662} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 		{93E1166B-F5EF-4A8B-A844-AE9D15A3DAA1} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
+		{E099C2CA-08C4-494A-8FC6-532EC73FD346} = {0F910AA7-B9B2-465C-834A-F73C01221A79}
 	EndGlobalSection
 EndGlobal

@@ -50,7 +50,7 @@ namespace PriorityHealth.Demo.Web.Api
         /// </summary>
         private static void Init()
         {
-            _environment = EnvironmentProfile.Local;
+            _environment = EnvironmentProfile.Development;
             _bootstrapper = new PriorityHealth.Configuration.Bootstrapper();
         }
 
@@ -61,6 +61,7 @@ namespace PriorityHealth.Demo.Web.Api
         {
             _bootstrapper
                 .InitUsing<Application.Bootstrap.NinjectBootstrapper>()
+                .InitUsing<Infrastructure.Migrations.MigrationSetupInitializer>()
                 .InitUsing<Application.Bootstrap.MainInitializer>()
                 .DisposeUsing<Application.Bootstrap.NinjectBootstrapper>();
         }

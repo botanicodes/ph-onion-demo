@@ -12,7 +12,7 @@ namespace PriorityHealth.EntityFramework.Mapping
     {
         internal UserMap()
         {
-            ToTable("Users");
+            ToTable("User");
             HasKey(u => u.Id);
             Property(u => u.Id).IsRequired();
             Property(u => u.Email);

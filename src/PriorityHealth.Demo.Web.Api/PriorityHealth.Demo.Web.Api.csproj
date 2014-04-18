@@ -44,6 +44,14 @@
     <Reference Include="Antlr3.Runtime">
       <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="AutoMapper, Version=3.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AutoMapper.3.2.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4, Version=3.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\AutoMapper.3.2.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -188,6 +196,10 @@
       <Project>{32a4a675-24bd-4843-bdc0-4a2fa508a9bb}</Project>
       <Name>PriorityHealth.Infrastructure.Configuration</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.EntityFramework\PriorityHealth.Infrastructure.EntityFramework.csproj">
+      <Project>{93e1166b-f5ef-4a8b-a844-ae9d15a3daa1}</Project>
+      <Name>PriorityHealth.Infrastructure.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Infrastructure.IoC\PriorityHealth.Infrastructure.IoC.csproj">
       <Project>{dc6fd1ed-67a4-4318-8a56-8a644b9a9662}</Project>
       <Name>PriorityHealth.Infrastructure.IoC</Name>
@@ -196,9 +208,10 @@
       <Project>{41062316-a319-4524-93f4-9348cacbbd42}</Project>
       <Name>PriorityHealth.Infrastructure.Logging</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Users\Index.cshtml" />
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.Migrations\PriorityHealth.Infrastructure.Migrations.csproj">
+      <Project>{e099c2ca-08c4-494a-8fc6-532ec73fd346}</Project>
+      <Name>PriorityHealth.Infrastructure.Migrations</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -229,6 +242,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <Import Project="..\..\packages\AutoMapper.3.2.0\tools\AutoMapper.targets" Condition="Exists('..\..\packages\AutoMapper.3.2.0\tools\AutoMapper.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

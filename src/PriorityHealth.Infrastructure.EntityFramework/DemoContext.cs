@@ -14,7 +14,11 @@ namespace PriorityHealth.EntityFramework
         public DbSet<User> Users { get; set; }
 
         public DemoContext()
-            : base("DefaultConnection")
+            : this("DefaultConnection")
+        { }
+
+        public DemoContext(string connString)
+            : base(connString)
         { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

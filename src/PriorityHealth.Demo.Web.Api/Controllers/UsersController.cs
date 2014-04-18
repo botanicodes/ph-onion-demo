@@ -1,30 +1,60 @@
-﻿using Ninject;
-using PriorityHealth.Core.Domain.Model.Users;
+﻿using PriorityHealth.Core.Domain.Model.Users;
+using PriorityHealth.Demo.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
-using System.Web.Mvc;
 
 namespace PriorityHealth.Demo.Web.Api.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : ApiController
     {
-        private IUserRepository _userRepository;
 
-        [Inject]
-        public UsersController(IUserRepository userRepository)
+        protected IUserRepository UsersRepository { get; set; }
+
+        public UsersController(IUserRepository repo)
         {
-            _userRepository = userRepository;
+            UsersRepository = repo;
         }
 
-        public ActionResult Index()
+        public IEnumerable<UserModel> Get()
         {
-            //ViewBag.Data = new User() { Name = "Jared Dickson", Email = "jared.dickson@spectrumhealth.org" };
-            ViewBag.Data = _userRepository.GetAll();
-            return View();
+            var users = UsersRepository.GetAll();
+            return users.Select(u => UserModel.FromDomain(u)).ToList();
         }
 
+        public UserModel Get(long id)
+        {
+            var user = UsersRepository.Get(id);
+            return UserModel.FromDomain(user);
+        }
+
+        public UserModel Post(CreateUserModel user)
+        {
+            User entity = AutoMapper.Mapper.Map<User>(user);
+            entity.HashPassword();
+            UsersRepository.Store(entity);
+
+            return AutoMapper.Mapper.Map<UserModel>(entity);
+        }
+
+        public UserModel Put(long id, UserModel user)
+        {
+            User entity = UsersRepository.Get(id);
+            entity = AutoMapper.Mapper.Map(user, entity);
+            
+            UsersRepository.Store(entity);
+
+            return AutoMapper.Mapper.Map<UserModel>(entity);
+        }
+
+        [HttpDelete]
+        public void Delete(long id)
+        {
+            User entity = UsersRepository.Get(id);
+            UsersRepository.Delete(entity);
+        }
     }
 }
