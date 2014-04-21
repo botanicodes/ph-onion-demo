@@ -12,6 +12,7 @@ namespace PriorityHealth.Demo.Configuration.IoC
     using Ninject.Modules;
     using PriorityHealth.Core.Services;
     using PriorityHealth.Core.Services.Conversion;
+    using PriorityHealth.Infrastructure.Caching.Providers;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -28,7 +29,7 @@ namespace PriorityHealth.Demo.Configuration.IoC
         {
             Bind<ILogger>().To<Logging.Impl.Log4NetLogger>();
             Bind<IStringConverter>().To<StringConverter>();
-            
+            Bind<ICacheProvider>().To<MemCache>();
         }
     }
 }

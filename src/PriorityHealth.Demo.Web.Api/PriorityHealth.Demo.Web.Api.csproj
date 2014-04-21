@@ -80,6 +80,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -184,6 +185,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Caching\Infrastructure.Caching.csproj">
+      <Project>{00cbccf4-c438-4e62-b825-be8429e5ce19}</Project>
+      <Name>Infrastructure.Caching</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Core\PriorityHealth.Core.csproj">
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
       <Name>PriorityHealth.Core</Name>

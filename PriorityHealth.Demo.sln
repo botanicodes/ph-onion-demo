@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityHealth.Infrastructure.Migrations", "src\PriorityHealth.Infrastructure.Migrations\PriorityHealth.Infrastructure.Migrations.csproj", "{E099C2CA-08C4-494A-8FC6-532EC73FD346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Caching", "src\Infrastructure.Caching\Infrastructure.Caching.csproj", "{00CBCCF4-C438-4E62-B825-BE8429E5CE19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E099C2CA-08C4-494A-8FC6-532EC73FD346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CBCCF4-C438-4E62-B825-BE8429E5CE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CBCCF4-C438-4E62-B825-BE8429E5CE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CBCCF4-C438-4E62-B825-BE8429E5CE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CBCCF4-C438-4E62-B825-BE8429E5CE19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
