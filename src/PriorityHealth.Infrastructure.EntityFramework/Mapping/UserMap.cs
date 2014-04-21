@@ -1,4 +1,4 @@
-﻿using PriorityHealth.Core.Domain.Model.Users;
+﻿using Core.Domain.Model.Users;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;

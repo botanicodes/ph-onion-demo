@@ -4,7 +4,7 @@
 //  <author>Joe Rivard</author>
 // </copyright>
 //-----------------------------------------------------------------------	  	  
-namespace PriorityHealth.Core.Services.Conversion
+namespace Core.Services.Conversion
 {
     public interface IStringConverter
     {

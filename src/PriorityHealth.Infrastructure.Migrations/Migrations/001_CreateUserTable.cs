@@ -1,6 +1,6 @@
 ﻿using FluentMigrator;
 
-namespace PriorityHealth.Infrastructure.Migrations.Migrations
+namespace Infrastructure.Migrations.Migrations
 {
     [Migration(1)]
     public class CreateUserTable : Migration

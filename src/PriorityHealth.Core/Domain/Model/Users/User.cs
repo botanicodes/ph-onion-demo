@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------	  	  
 
-namespace PriorityHealth.Core.Domain.Model.Users
+namespace Core.Domain.Model.Users
 {
     using DevOne.Security.Cryptography.BCrypt;
     using System;

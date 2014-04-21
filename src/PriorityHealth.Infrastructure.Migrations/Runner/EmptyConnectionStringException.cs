@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PriorityHealth.Infrastructure.Migrations.Runner
+namespace Infrastructure.Migrations.Runner
 {
     [Serializable()]
     public class EmptyConnectionStringException : System.Exception

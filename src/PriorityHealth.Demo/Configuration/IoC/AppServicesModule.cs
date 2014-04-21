@@ -10,9 +10,9 @@
 namespace PriorityHealth.Demo.Configuration.IoC
 {
     using Ninject.Modules;
-    using PriorityHealth.Core.Services;
-    using PriorityHealth.Core.Services.Conversion;
-    using PriorityHealth.Infrastructure.Caching.Providers;
+    using Core.Services;
+    using Core.Services.Conversion;
+    using Infrastructure.Caching.Providers;
     using System;
     using System.Collections.Generic;
     using System.Linq;

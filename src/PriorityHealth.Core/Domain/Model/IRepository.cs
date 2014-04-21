@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 	  
 	  
-namespace PriorityHealth.Core.Domain.Model
+namespace Core.Domain.Model
 {
     using System;
     using System.Collections.Generic;

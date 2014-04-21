@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 	  
-namespace PriorityHealth.Core.Domain.Model
+namespace Core.Domain.Model
 {
     public interface IEntity<T> : IEntity where T : IEntity<T>
     {

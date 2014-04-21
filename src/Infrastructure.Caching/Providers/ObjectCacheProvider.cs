@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 
 
-namespace PriorityHealth.Infrastructure.Caching.Providers
+namespace Infrastructure.Caching.Providers
 {
     using System;
     using System.Collections.Generic;

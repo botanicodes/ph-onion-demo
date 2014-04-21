@@ -2,7 +2,7 @@
 
 namespace PriorityHealth.Phonebook.Application.Attributes
 {
-    using PriorityHealth.Core.Application;
+    using Core.Application;
     using System;
     using System.Collections.Generic;
     using System.Linq;

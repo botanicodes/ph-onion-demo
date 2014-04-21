@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------	  	  
 
-namespace PriorityHealth.Core.Application
+namespace Core.Application
 {
     public interface IInitializer
     {

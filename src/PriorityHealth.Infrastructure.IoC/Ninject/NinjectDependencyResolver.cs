@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace PriorityHealth.Infrastructure.IoC
+namespace Infrastructure.IoC
 {
     using Ninject;
     using System;

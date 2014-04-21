@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------	  	  
 
-namespace PriorityHealth.Core.Services.Conversion
+namespace Core.Services.Conversion
 {
     using System;
     using System.ComponentModel;

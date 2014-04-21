@@ -1,7 +1,7 @@
-﻿using PriorityHealth.Core.Domain.Model.Users;
-using PriorityHealth.Core.Services;
+﻿using Core.Domain.Model.Users;
+using Core.Services;
 using PriorityHealth.Demo.Models.Users;
-using PriorityHealth.Infrastructure.Caching;
+using Infrastructure.Caching;
 using System;
 using System.Collections.Generic;
 using System.Linq;

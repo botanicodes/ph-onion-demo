@@ -1,7 +1,7 @@
-﻿using PriorityHealth.Core.Domain.Model.Users;
+﻿using Core.Domain.Model.Users;
 using FluentMigrator;
 
-namespace PriorityHealth.Infrastructure.Migrations.Profiles
+namespace Infrastructure.Migrations.Profiles
 {
     [Profile("Development")]
     public class CreateDevelopmentUsers : Migration

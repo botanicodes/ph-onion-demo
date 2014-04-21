@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 	  
 	  
-namespace PriorityHealth.Infrastructure.IoC
+namespace Infrastructure.IoC
 {
     using System;
     using System.Web;
@@ -15,7 +15,7 @@ namespace PriorityHealth.Infrastructure.IoC
     using System.Web.Http;    
     using System.Web.Http.Dependencies;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-    using PriorityHealth.Core.Application;
+    using Core.Application;
 
     /// <summary>
     /// Abstract class used for bootstrapping ninject for an application

@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------	  
 	  
-namespace PriorityHealth.Core.Application
+namespace Core.Application
 {
     using System;
     using System.Configuration;

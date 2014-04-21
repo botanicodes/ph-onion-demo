@@ -92,21 +92,21 @@
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
       <Name>PriorityHealth.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Infrastructure.Configuration\PriorityHealth.Infrastructure.Configuration.csproj">
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.Configuration\Infrastructure.Configuration.csproj">
       <Project>{32a4a675-24bd-4843-bdc0-4a2fa508a9bb}</Project>
-      <Name>PriorityHealth.Infrastructure.Configuration</Name>
+      <Name>Infrastructure.Configuration</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Infrastructure.EntityFramework\PriorityHealth.Infrastructure.EntityFramework.csproj">
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.EntityFramework\Infrastructure.EntityFramework.csproj">
       <Project>{93e1166b-f5ef-4a8b-a844-ae9d15a3daa1}</Project>
-      <Name>PriorityHealth.Infrastructure.EntityFramework</Name>
+      <Name>Infrastructure.EntityFramework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Infrastructure.IoC\PriorityHealth.Infrastructure.IoC.csproj">
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.IoC\Infrastructure.IoC.csproj">
       <Project>{dc6fd1ed-67a4-4318-8a56-8a644b9a9662}</Project>
-      <Name>PriorityHealth.Infrastructure.IoC</Name>
+      <Name>Infrastructure.IoC</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Infrastructure.Logging\PriorityHealth.Infrastructure.Logging.csproj">
+    <ProjectReference Include="..\PriorityHealth.Infrastructure.Logging\Infrastructure.Logging.csproj">
       <Project>{41062316-a319-4524-93f4-9348cacbbd42}</Project>
-      <Name>PriorityHealth.Infrastructure.Logging</Name>
+      <Name>Infrastructure.Logging</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

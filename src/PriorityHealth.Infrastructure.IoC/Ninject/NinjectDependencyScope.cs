@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 
 
-namespace PriorityHealth.Infrastructure.IoC
+namespace Infrastructure.IoC
 {
     using Ninject.Syntax;
     using Ninject;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PriorityHealth.Infrastructure.Migrations
+namespace Infrastructure.Migrations
 {
     public class MigrationSetupInitializer : Core.Application.IInitializer
     {

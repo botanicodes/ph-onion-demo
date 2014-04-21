@@ -9,7 +9,7 @@
 
 namespace PriorityHealth.Configuration
 {
-    using PriorityHealth.Core.Application;
+    using Core.Application;
     using PriorityHealth.Phonebook.Application.Attributes;
     using System;
     using System.Collections.Generic;

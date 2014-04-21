@@ -8,8 +8,8 @@
 	 
 namespace PriorityHealth.Demo.Application.Bootstrap
 {
-    using PriorityHealth.Core.Application;
-    using PriorityHealth.Infrastructure.IoC;
+    using Core.Application;
+    using Infrastructure.IoC;
     using System;
     using System.Collections.Generic;
     using System.Linq;

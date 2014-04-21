@@ -5,7 +5,7 @@
 // </copyright>
 //-----------------------------------------------------------------------	  	  
 
-namespace PriorityHealth.Core.Services
+namespace Core.Services
 {
     using System;
     using System.Collections.Generic;

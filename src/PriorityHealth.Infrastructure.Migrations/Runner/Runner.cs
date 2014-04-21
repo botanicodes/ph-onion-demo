@@ -7,7 +7,7 @@ using FluentMigrator.Runner.Announcers;
 using FluentMigrator.Runner.Initialization;
 using System.Configuration;
 
-namespace PriorityHealth.Infrastructure.Migrations.Runner
+namespace Infrastructure.Migrations.Runner
 {
     public class Runner
     {

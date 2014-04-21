@@ -6,7 +6,7 @@
 //-----------------------------------------------------------------------
 	  
 	  
-namespace PriorityHealth.Core.Application
+namespace Core.Application
 {
     public interface IBootstrapper : IInitializer, IDisposer
     {

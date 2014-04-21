@@ -1,6 +1,6 @@
 ﻿using FluentMigrator;
 
-namespace PriorityHealth.Infrastructure.Migrations.Runner
+namespace Infrastructure.Migrations.Runner
 {
     public class MigrationOptions : IMigrationProcessorOptions
     {

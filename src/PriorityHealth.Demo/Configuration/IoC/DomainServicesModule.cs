@@ -8,7 +8,7 @@
 namespace PriorityHealth.Demo.Configuration.IoC
 {
     using Ninject.Modules;
-    using PriorityHealth.Core.Domain.Model.Users;
+    using Core.Domain.Model.Users;
     using PriorityHealth.EntityFramework.Repositories;
     using System;
     using System.Collections.Generic;
