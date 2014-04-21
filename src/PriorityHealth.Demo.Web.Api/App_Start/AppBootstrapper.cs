@@ -15,11 +15,13 @@ namespace PriorityHealth.Demo.Web.Api
     using System.Linq;
     using System.Web;
     using Core.Application;
+    using PriorityHealth.Demo.Application;
 
     public static class AppBootstrapper
     {
         private static IBootstrapper _bootstrapper;
         private static EnvironmentProfile _environment;
+        private static AppSettings _settings;
 
         static AppBootstrapper()
         {
@@ -50,8 +52,9 @@ namespace PriorityHealth.Demo.Web.Api
         /// </summary>
         private static void Init()
         {
-            _environment = EnvironmentProfile.Development;
-            _bootstrapper = new PriorityHealth.Configuration.Bootstrapper();
+            _settings = new AppSettings();
+            _environment = _settings.Environment;
+            _bootstrapper = new Infrastructure.Configuration.Bootstrapper();
         }
 
         /// <summary>

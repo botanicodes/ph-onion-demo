@@ -1,6 +1,6 @@
 ﻿
 
-namespace PriorityHealth.Phonebook.Application.Attributes
+namespace PriorityHealth.Demo.Application.Attributes
 {
     using Core.Application;
     using System;

@@ -52,6 +52,7 @@
     <Compile Include="Application\IDisposer.cs" />
     <Compile Include="Application\IInitializer.cs" />
     <Compile Include="Application\Impl\AppSettingsBase.cs" />
+    <Compile Include="Common\Extensions\NameValueCollectionExtensions.cs" />
     <Compile Include="Domain\Model\EntityBase.cs" />
     <Compile Include="Domain\Model\IEntity.cs" />
     <Compile Include="Domain\Model\IRepository.cs" />
@@ -65,9 +66,7 @@
     <Compile Include="Services\IObjectStore.cs" />
     <Compile Include="Services\IServiceLocator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

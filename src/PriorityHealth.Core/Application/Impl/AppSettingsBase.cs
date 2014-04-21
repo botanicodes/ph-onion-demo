@@ -9,21 +9,10 @@ namespace Core.Application
 {
     using System;
     using System.Configuration;
+    using Core.Common.Extensions;
 
     public abstract class AppSettingsBase : IAppSettings
     {
-        private Services.Conversion.IStringConverter _converter;
-
-        /// <summary>
-        /// Used to convert string values into other data types
-        /// </summary>
-        public Services.Conversion.IStringConverter Converter
-        {
-            get
-            {
-                return _converter ?? (_converter = new Services.Conversion.StringConverter());
-            }
-        }
 
         /// <summary>
         /// Get a converted value of a configuration value
@@ -31,7 +20,7 @@ namespace Core.Application
         /// <typeparam name="T"></typeparam>
         /// <param name="name"></param>
         /// <returns></returns>
-        public T Get<T>(string name)
+        public virtual T Get<T>(string name)
         {
             return Get<T>(name, default(T));
         }
@@ -43,17 +32,13 @@ namespace Core.Application
         /// <param name="name"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        public T Get<T>(string name, T defaultValue)
+        public virtual T Get<T>(string name, T defaultValue)
         {
-            var strValue = Get(name);
-            if (!String.IsNullOrEmpty(strValue))
-            {
-                return Converter.Convert<T>(strValue);
-            }
-            else
-            {
+            T value = ConfigurationManager.AppSettings.GetValue<T>(name);
+            if (null == value)
                 return defaultValue;
-            }
+            else
+                return value;
         }
 
         /// <summary>
@@ -61,7 +46,7 @@ namespace Core.Application
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public string Get(string name)
+        public virtual string Get(string name)
         {
             return ConfigurationManager.AppSettings[name];
         }

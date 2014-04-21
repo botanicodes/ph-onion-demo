@@ -10,7 +10,7 @@
 namespace PriorityHealth.Demo.Application.Bootstrap
 {
     using Core.Application;
-    using PriorityHealth.Phonebook.Application.Attributes;
+    using PriorityHealth.Demo.Application.Attributes;
     using System;
     using System.Collections.Generic;
     using System.Linq;
