@@ -88,9 +88,9 @@
       <Project>{00cbccf4-c438-4e62-b825-be8429e5ce19}</Project>
       <Name>Infrastructure.Caching</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Core\PriorityHealth.Core.csproj">
+    <ProjectReference Include="..\PriorityHealth.Core\Core.csproj">
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
-      <Name>PriorityHealth.Core</Name>
+      <Name>Core %28Core\Core%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Infrastructure.Configuration\Infrastructure.Configuration.csproj">
       <Project>{32a4a675-24bd-4843-bdc0-4a2fa508a9bb}</Project>

@@ -84,9 +84,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PriorityHealth.Core\PriorityHealth.Core.csproj">
+    <ProjectReference Include="..\PriorityHealth.Core\Core.csproj">
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
-      <Name>PriorityHealth.Core</Name>
+      <Name>Core %28Core\Core%29</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

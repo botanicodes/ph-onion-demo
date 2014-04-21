@@ -154,7 +154,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,9 +188,9 @@
       <Project>{00cbccf4-c438-4e62-b825-be8429e5ce19}</Project>
       <Name>Infrastructure.Caching</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PriorityHealth.Core\PriorityHealth.Core.csproj">
+    <ProjectReference Include="..\PriorityHealth.Core\Core.csproj">
       <Project>{6eddc95a-3911-4dda-b9f7-4196233c855d}</Project>
-      <Name>PriorityHealth.Core</Name>
+      <Name>Core %28Core\Core%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\PriorityHealth.Demo\PriorityHealth.Demo.csproj">
       <Project>{98c8fbd2-ecf8-419e-8aa9-4ef704f3ff7a}</Project>
